@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   nitro: {
     experimental: {
       openAPI: true,
-    },
+      database: true
+    }
   },
   openAPI: {
   meta: {

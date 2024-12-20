@@ -7,12 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
     "@scalar/nuxt": "^0.2.168",
+    "better-sqlite3": "^11.7.0",
+    "db0": "^0.2.1",
+    "drizzle-orm": "^0.38.2",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.1"
   }
 }
