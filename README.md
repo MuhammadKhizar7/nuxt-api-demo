@@ -1,4 +1,7 @@
-# Nuxt Minimal Starter
+# Nuxt api demo
+- api docs
+- drizzle using db0(sqlite example)
+- zod (coming soon)
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
