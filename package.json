@@ -23,6 +23,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxt/ui": "^2.20.0",
     "drizzle-kit": "^0.30.1"
   }
 }

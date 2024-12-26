@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@scalar/nuxt', 'nuxt-auth-utils'],
+  modules: ['@scalar/nuxt', 'nuxt-auth-utils', '@nuxt/ui'],
   nitro: {
     experimental: {
       openAPI: true,
