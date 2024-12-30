@@ -1,7 +1,17 @@
 # Nuxt api demo
 - api docs
 - drizzle using db0(sqlite example)
-- zod (coming soon)
+- zod validation
+- nuxt auth utils
+- nuxt-ui
+
+This project is based on the work of [atidone] (https://github.com/atinux/atidone/tree/main)
+changes:
+- removed NuxtHub
+- add login/register using password instead of github
+- add todo and simplify the code for new learners (it was hard to understand the code for new learners and learn all concepts in one place)
+- try fix the bug because of change done to simplify the code
+  
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
