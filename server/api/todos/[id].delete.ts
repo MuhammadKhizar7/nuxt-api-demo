@@ -5,10 +5,7 @@ export default eventHandler(async (event) => {
   const { id } = await useValidatedParams(event, {
     id: zh.intAsString
   })
-  // const { user } = await requireUserSession(event)
-  const user = {
-    id: 1
-  }
+  const { user } = await requireUserSession(event)
 
   // List todos for the current user
   const deletedTodo = await useDb().delete(tables.todos).where(and(

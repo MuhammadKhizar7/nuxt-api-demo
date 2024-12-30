@@ -8,10 +8,7 @@ export default eventHandler(async (event) => {
   const { completed } = await useValidatedBody(event, {
     completed: z.number().int().min(0).max(1)
   })
-//   const { user } = await requireUserSession(event)
-const user = {
-  id: 1
-}
+  const { user } = await requireUserSession(event)
   // List todos for the current user
   const todo = await useDb().update(tables.todos).set({
     completed

@@ -8,7 +8,7 @@ watch(loggedIn, () => {
   if (!loggedIn.value) {
     navigateTo('/')
   }
-}, { immediate: true })
+})
 
 function toggleColorMode() {
   colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
@@ -79,13 +79,6 @@ const items = [
             icon="i-heroicons-list-bullet"
             label="Todos"
             :color="$route.path === '/todos' ? 'primary' : 'gray'"
-            variant="ghost"
-          />
-          <UButton
-            to="/optimistic-todos"
-            icon="i-heroicons-sparkles"
-            label="Optimistic Todos"
-            :color="$route.path === '/optimistic-todos' ? 'primary' : 'gray'"
             variant="ghost"
           />
           <UDropdown

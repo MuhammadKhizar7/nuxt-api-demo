@@ -10,16 +10,18 @@ export default defineEventHandler(async (event) => {
 
   const hashedPassword = await hashPassword(password)
 
-  await db.insert(tables.users).values({
+  const user = await db.insert(tables.users).values({
       name,
       email,
       password: hashedPassword,
-    })
+    }).returning().get()
 
   // In real applications, you should send a confirmation email to the user before logging them in.
 
   await setUserSession(event, {
     user: {
+      id: user.id,
+      name,
       email,
     },
     loggedInAt: Date.now(),
