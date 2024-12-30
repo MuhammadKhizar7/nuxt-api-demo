@@ -38,5 +38,5 @@ export default defineEventHandler(async (event) => {
     loggedInAt: Date.now(),
   })
   console.log('User logged in:', email)
-  return setResponseStatus(event, 201)
+  return setResponseStatus(event, 200)
 })
